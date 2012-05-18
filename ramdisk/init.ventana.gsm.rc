@@ -1,0 +1,4 @@
+service gsm /system/bin/sh /sbin/gsm
+    class main
+    user root
+    oneshot

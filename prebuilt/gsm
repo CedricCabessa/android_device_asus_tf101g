@@ -16,7 +16,7 @@
 # A solution will be that rild lib contains pppd code (ie avoid exec)
 #
 # [1] external/ppp/pppd/sys-linux.c line 2022
-# [2] asus/tf101/drivers/net/ppp_generic.c line 368
+# [2] asus/tf101g/drivers/net/ppp_generic.c line 368
 # [3] hardware/ril/rild/rild.c  line 87
 
 /system/bin/mount -o remount,rw /system

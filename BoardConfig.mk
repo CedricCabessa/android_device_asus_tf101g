@@ -18,7 +18,7 @@ BOARD_USES_GENERIC_AUDIO := false
 USE_CAMERA_STUB := false
 
 # inherit from the proprietary version
--include vendor/asus/tf101/BoardConfigVendor.mk
+-include vendor/asus/tf101g/BoardConfigVendor.mk
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -43,7 +43,7 @@ BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE :=
 
 # EGL settings
-BOARD_EGL_CFG := device/asus/tf101/prebuilt/egl.cfg
+BOARD_EGL_CFG := device/asus/tf101g/prebuilt/egl.cfg
 USE_OPENGL_RENDERER := true
 
 # Misc display settings
@@ -81,15 +81,17 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 TARGET_KERNEL_CONFIG := cyanogen_tf101_defconfig
 
 # Prebuilt Kernel Fallback
-TARGET_PREBUILT_KERNEL := device/asus/tf101/kernel
+TARGET_PREBUILT_KERNEL := device/asus/tf101g/kernel
 
 # Coustom Tools
-TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/asus/tf101/releasetools/tf101_ota_from_target_files
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/asus/tf101g/releasetools/tf101g_ota_from_target_files
+# FIXME: need to be removed when CWM support tf101g
+TARGET_OTA_ASSERT_DEVICE := tf101
 
 # Recovery Options
-BOARD_CUSTOM_BOOTIMG_MK := device/asus/tf101/recovery/recovery.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/asus/tf101g/recovery/recovery.mk
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
-TARGET_RECOVERY_INITRC := device/asus/tf101/recovery/init.rc
+TARGET_RECOVERY_INITRC := device/asus/tf101g/recovery/init.rc
 BOARD_HAS_SDCARD_INTERNAL := true

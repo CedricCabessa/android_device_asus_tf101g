@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Asus Transformer (TF101) Settings</string>
+    <string name="app_name">Asus Transformer (TF101g) Settings</string>
 
     <!-- alerts and errors -->
     <string name="warning">Warning</string>

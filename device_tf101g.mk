@@ -17,13 +17,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/asus/tf101/tf101-vendor.mk)
+$(call inherit-product-if-exists, vendor/asus/tf101g/tf101g-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/asus/tf101/overlay
+DEVICE_PACKAGE_OVERLAYS += device/asus/tf101g/overlay
 
 # Prebuilt kernel location
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/asus/tf101/kernel
+	LOCAL_KERNEL := device/asus/tf101g/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
@@ -114,12 +114,12 @@ PRODUCT_PROPERTY_OVERRIDES := \
 $(call inherit-product, frameworks/base/build/tablet-dalvik-heap.mk)
 
 # Call the vendor to setup propiatory files
-$(call inherit-product-if-exists, vendor/asus/tf101/tf101-vendor.mk)
+$(call inherit-product-if-exists, vendor/asus/tf101g/tf101g-vendor.mk)
 
 # Device nameing
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_tf101
-PRODUCT_DEVICE := tf101
-PRODUCT_MODEL := tf101
+PRODUCT_NAME := full_tf101g
+PRODUCT_DEVICE := tf101g
+PRODUCT_MODEL := tf101g
 PRODUCT_BRAND := asus
 PRODUCT_MANUFACTURER := asus

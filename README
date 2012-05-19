@@ -1,0 +1,15 @@
+tf101g with 3g for cyanogenmod.
+This _not_ an official port.
+
+Here are the major issues :
+
+ * After a reboot, the sim card is locked. You need to shutdown the tablet to
+reset it.
+ * GSM works with a nasty hack based on setuid. I tried to document it in the
+file prebuilt/gsm.
+ * The OTA file is forced as "tf101" to make CWM happy
+
+
+To use it, clone this repo in device/asus and add :
+  add_lunch_combo cm_tf101g-userdebug
+in vendor/cm/vendorsetup.sh

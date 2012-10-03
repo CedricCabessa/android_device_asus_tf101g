@@ -1,3 +1,5 @@
 #
 # system.prop for tf101
 #
+rild.libpath=/system/lib/libhuawei-ril.so
+rild.libargs=-d /dev/ttyUSB2

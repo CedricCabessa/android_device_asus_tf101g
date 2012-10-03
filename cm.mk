@@ -3,6 +3,7 @@ $(call inherit-product, device/asus/tf101/full_tf101.mk)
 
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/cm/config/gsm.mk)
 
 #
 # Setup device specific product configuration.

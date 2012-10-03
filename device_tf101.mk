@@ -13,6 +13,7 @@
 # limitations under the License.
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
 
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
@@ -35,7 +36,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/init.ventana.usb.rc:root/init.ventana.usb.rc \
     $(LOCAL_PATH)/ramdisk/ueventd.ventana.rc:root/ueventd.ventana.rc \
     $(LOCAL_PATH)/ramdisk/init.ventana.keyboard.rc:root/init.ventana.keyboard.rc \
+    $(LOCAL_PATH)/ramdisk/init.ventana.gsm.rc:root/init.ventana.gsm.rc \
     $(LOCAL_PATH)/prebuilt/keyswap::root/sbin/keyswap \
+    $(LOCAL_PATH)/prebuilt/gsm::root/sbin/gsm \
     $(LOCAL_PATH)/ramdisk/fstab.ventana:root/fstab.ventana
 
 # Prebuilt configeration files
@@ -46,7 +49,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio_policy.conf:system/etc/audio_policy.conf \
     $(LOCAL_PATH)/prebuilt/vold.fstab:system/etc/vold.fstab \
     $(LOCAL_PATH)/prebuilt/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/prebuilt/gpsconfig.xml:system/etc/gps/gpsconfig.xml
+    $(LOCAL_PATH)/prebuilt/gpsconfig.xml:system/etc/gps/gpsconfig.xml \
+    $(LOCAL_PATH)/prebuilt/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
 # Input device configeration files
 PRODUCT_COPY_FILES += \

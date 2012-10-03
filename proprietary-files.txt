@@ -33,6 +33,7 @@ lib/hw/sensors.ventana.so
 lib/libardrv_dynamic.so
 lib/libasound.so
 lib/libcgdrv.so
+lib/libhuawei-ril.so
 lib/libmllite.so
 lib/libmpl.so
 lib/libmlplatform.so

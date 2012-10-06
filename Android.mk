@@ -22,6 +22,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),tf101)
+ifeq ($(TARGET_DEVICE),tf101g)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif

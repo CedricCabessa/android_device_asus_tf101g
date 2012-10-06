@@ -25,13 +25,13 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Inherit from toro device
-$(call inherit-product, device/asus/tf101/device_tf101.mk)
+$(call inherit-product, device/asus/tf101g/device_tf101g.mk)
 
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_tf101
-PRODUCT_DEVICE := tf101
+PRODUCT_NAME := full_tf101g
+PRODUCT_DEVICE := tf101g
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Transformer
